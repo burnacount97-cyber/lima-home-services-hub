@@ -35,6 +35,8 @@ const ServiceDetail = () => {
   }
 
   const heroImage = imageMap[service.slug];
+  const quoteMessage = `Me interesa el servicio de ${service.name} para el distrito de [DISTRITO], estoy listo para empezar.`;
+  const quoteUrl = `https://wa.me/51996997815?text=${encodeURIComponent(quoteMessage)}`;
 
   return (
     <main className="min-h-screen bg-background">
@@ -121,7 +123,7 @@ const ServiceDetail = () => {
         {/* CTA */}
         <div className="mt-12 text-center opacity-0 animate-fade-up" style={{ animationDelay: "600ms" }}>
           <a
-            href="https://wa.me/51996997815"
+            href={quoteUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-4 text-lg font-semibold text-accent-foreground shadow-lg transition-transform hover:scale-105"
