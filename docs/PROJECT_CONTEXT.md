@@ -19,6 +19,7 @@
 ## Integraciones
 - WhatsApp (`wa.me`) al numero operativo.
 - Sin integraciones con plataformas de scaffolding externas.
+- Metadatos Open Graph y Twitter para previews al compartir enlaces.
 
 ## Variables de entorno
 - No hay variables de entorno requeridas en MVP.
@@ -30,6 +31,8 @@
 
 ## Seguridad base
 - No exponer secretos en frontend.
+- Validaciones de entrada se evaluaran en fase backend.
 
 ## Notas operativas
-- Favicon servido desde `public/favicon.svg`.
+- Favicon servido desde `public/favicon.svg` y `public/favicon.ico`.
+- Imagen social de preview servida desde `public/og-image.png`.

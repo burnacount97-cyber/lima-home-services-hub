@@ -36,6 +36,7 @@ Landing SEO-first para captar leads de servicios de mantenimiento en Lima y deri
 ## Integraciones externas
 - WhatsApp via `https://wa.me/51996997815`.
 - No hay integraciones con plataformas externas de generacion de codigo.
+- Metadatos Open Graph y Twitter para previews al compartir enlaces.
 
 ## Variables de entorno
 - No hay variables de entorno requeridas en MVP.
@@ -45,6 +46,7 @@ Landing SEO-first para captar leads de servicios de mantenimiento en Lima y deri
 - Ruteo en `src/App.tsx`.
 - Data de servicios en `src/data/services.ts`.
 - Favicon de marca servido desde `public/favicon.svg` y `public/favicon.ico`.
+- Imagen social de preview servida desde `public/og-image.png`.
 
 ## Seguridad base
 - No exponer secretos en frontend.
