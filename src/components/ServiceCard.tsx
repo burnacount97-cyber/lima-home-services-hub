@@ -12,7 +12,7 @@ const ServiceCard = ({ name, slug, image, index }: ServiceCardProps) => {
   return (
     <Link
       to={`/servicios/${slug}`}
-      className="group relative flex aspect-[4/3] w-full items-end overflow-hidden rounded-lg opacity-0 animate-fade-up"
+      className="group relative flex min-h-0 w-full items-end overflow-hidden rounded-lg opacity-0 animate-fade-up"
       style={{ animationDelay: `${index * 100}ms` }}
     >
       <img
