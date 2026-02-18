@@ -1,20 +1,35 @@
-﻿# PROJECT_CONTEXT (Resumen Operacional)
+# PROJECT_CONTEXT (Resumen operacional)
 
 ## Fuente de verdad
-- Documento primario: `docs/context.md`
+- Documento principal: `docs/context.md`
 - Contrato de datos: `docs/contract.md`
 
-## Flujo principal vigente
-- Home `/` lista servicios y dirige a `/servicios/{slug}`.
-- En cada detalle de servicio, el boton `Solicitar cotizacion` abre WhatsApp a `+51996997815` con mensaje precargado:
-  - "Me interesa el servicio de {SERVICIO} para el distrito de [DISTRITO], estoy listo para empezar."
-- Boton flotante global de WhatsApp disponible en toda la app.
-
-## Stack actual
+## Stack
 - React + TypeScript + Vite
-- TailwindCSS + componentes UI (shadcn style)
+- Tailwind CSS + componentes UI (shadcn style)
 - React Router
+- TanStack Query
 
-## Convenciones
-- Slugs de servicios: gasfiteria, electricidad, pintura, drywall, cerrajeria, carpinteria
-- Zonas visibles en UI: Chorrillos y Surco (expandible)
+## Rutas y flujo
+- `/` -> listado de servicios.
+- `/servicios/:slug` -> detalle del servicio.
+- En detalle, `Solicitar cotizacion` abre WhatsApp con mensaje precargado por servicio.
+- Existe boton flotante global de WhatsApp.
+
+## Integraciones
+- WhatsApp (`wa.me`) al numero operativo.
+- Sin integraciones con plataformas de scaffolding externas.
+
+## Variables de entorno
+- No hay variables de entorno requeridas en MVP.
+
+## Arquitectura
+- SPA cliente con entrada en `src/main.tsx`.
+- Ruteo en `src/App.tsx`.
+- Data de servicios centralizada en `src/data/services.ts`.
+
+## Seguridad base
+- No exponer secretos en frontend.
+
+## Notas operativas
+- Favicon servido desde `public/favicon.svg`.
