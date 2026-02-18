@@ -1,5 +1,4 @@
 import ServiceCard from "@/components/ServiceCard";
-import WhatsAppButton from "@/components/WhatsAppButton";
 
 import gasfiteriaImg from "@/assets/gasfiteria.jpg";
 import electricidadImg from "@/assets/electricidad.jpg";
@@ -37,7 +36,6 @@ const Index = () => {
         ))}
       </section>
 
-      <WhatsAppButton />
     </main>
   );
 };

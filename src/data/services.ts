@@ -1,3 +1,12 @@
+import avatarF1 from "@/assets/avatar-f1.jpg";
+import avatarF2 from "@/assets/avatar-f2.jpg";
+import avatarF3 from "@/assets/avatar-f3.jpg";
+import avatarF4 from "@/assets/avatar-f4.jpg";
+import avatarM1 from "@/assets/avatar-m1.jpg";
+import avatarM2 from "@/assets/avatar-m2.jpg";
+import avatarM3 from "@/assets/avatar-m3.jpg";
+import avatarM4 from "@/assets/avatar-m4.jpg";
+
 export interface ServiceData {
   slug: string;
   name: string;
@@ -9,6 +18,7 @@ export interface ServiceData {
     district: string;
     text: string;
     initials: string;
+    image: string;
   }[];
 }
 
@@ -28,10 +38,10 @@ export const services: ServiceData[] = [
       "Mantenimiento preventivo de redes de agua",
     ],
     testimonials: [
-      { name: "María López", district: "Chorrillos", text: "Llegaron puntual y solucionaron la fuga en menos de una hora. Muy profesionales.", initials: "ML" },
-      { name: "Carlos Ramírez", district: "Surco", text: "Excelente trabajo cambiando toda la grifería del baño. Quedó impecable.", initials: "CR" },
-      { name: "Ana Gutiérrez", district: "Chorrillos", text: "Servicio rápido y precio justo. Los recomiendo al 100%.", initials: "AG" },
-      { name: "José Mendoza", district: "Surco", text: "Desatoraron mi desagüe en minutos. Muy buen servicio.", initials: "JM" },
+      { name: "María López", district: "Chorrillos", text: "Llegaron puntual y solucionaron la fuga en menos de una hora. Muy profesionales.", initials: "ML", image: avatarF1 },
+      { name: "Carlos Ramírez", district: "Surco", text: "Excelente trabajo cambiando toda la grifería del baño. Quedó impecable.", initials: "CR", image: avatarM1 },
+      { name: "Ana Gutiérrez", district: "Chorrillos", text: "Servicio rápido y precio justo. Los recomiendo al 100%.", initials: "AG", image: avatarF3 },
+      { name: "José Mendoza", district: "Surco", text: "Desatoraron mi desagüe en minutos. Muy buen servicio.", initials: "JM", image: avatarM2 },
     ],
   },
   {
@@ -49,9 +59,9 @@ export const services: ServiceData[] = [
       "Mantenimiento eléctrico preventivo",
     ],
     testimonials: [
-      { name: "Pedro Salazar", district: "Surco", text: "Cambiaron todo el cableado de mi departamento. Trabajo impecable y seguro.", initials: "PS" },
-      { name: "Luisa Fernández", district: "Chorrillos", text: "Instalaron nuevos puntos de luz en toda la casa. Muy ordenados.", initials: "LF" },
-      { name: "Roberto Chávez", district: "Surco", text: "Resolvieron un cortocircuito que otros no pudieron detectar. Excelentes.", initials: "RC" },
+      { name: "Pedro Salazar", district: "Surco", text: "Cambiaron todo el cableado de mi departamento. Trabajo impecable y seguro.", initials: "PS", image: avatarM3 },
+      { name: "Luisa Fernández", district: "Chorrillos", text: "Instalaron nuevos puntos de luz en toda la casa. Muy ordenados.", initials: "LF", image: avatarF2 },
+      { name: "Roberto Chávez", district: "Surco", text: "Resolvieron un cortocircuito que otros no pudieron detectar. Excelentes.", initials: "RC", image: avatarM4 },
     ],
   },
   {
@@ -69,10 +79,10 @@ export const services: ServiceData[] = [
       "Retoques y mantenimiento de pintura",
     ],
     testimonials: [
-      { name: "Diana Torres", district: "Chorrillos", text: "Pintaron todo mi departamento en 2 días. Acabado perfecto y limpio.", initials: "DT" },
-      { name: "Miguel Ángel Soto", district: "Surco", text: "El empastado quedó increíble. Se nota la experiencia.", initials: "MS" },
-      { name: "Valentina Rojas", district: "Chorrillos", text: "Muy cuidadosos con los muebles. Todo quedó protegido y limpio.", initials: "VR" },
-      { name: "Fernando Díaz", district: "Surco", text: "Transformaron la fachada de mi casa. Parece nueva.", initials: "FD" },
+      { name: "Diana Torres", district: "Chorrillos", text: "Pintaron todo mi departamento en 2 días. Acabado perfecto y limpio.", initials: "DT", image: avatarF3 },
+      { name: "Miguel Ángel Soto", district: "Surco", text: "El empastado quedó increíble. Se nota la experiencia.", initials: "MS", image: avatarM1 },
+      { name: "Valentina Rojas", district: "Chorrillos", text: "Muy cuidadosos con los muebles. Todo quedó protegido y limpio.", initials: "VR", image: avatarF4 },
+      { name: "Fernando Díaz", district: "Surco", text: "Transformaron la fachada de mi casa. Parece nueva.", initials: "FD", image: avatarM2 },
     ],
   },
   {
@@ -90,9 +100,9 @@ export const services: ServiceData[] = [
       "Aislamiento acústico y térmico",
     ],
     testimonials: [
-      { name: "Sandra Huamán", district: "Surco", text: "Dividieron mi sala en dos ambientes en solo un día. Excelente calidad.", initials: "SH" },
-      { name: "Raúl Espinoza", district: "Chorrillos", text: "El cielo raso quedó perfecto. Muy profesionales y puntuales.", initials: "RE" },
-      { name: "Patricia Vargas", district: "Surco", text: "Hicieron un mueble empotrado en drywall que parece de carpintería fina.", initials: "PV" },
+      { name: "Sandra Huamán", district: "Surco", text: "Dividieron mi sala en dos ambientes en solo un día. Excelente calidad.", initials: "SH", image: avatarF1 },
+      { name: "Raúl Espinoza", district: "Chorrillos", text: "El cielo raso quedó perfecto. Muy profesionales y puntuales.", initials: "RE", image: avatarM3 },
+      { name: "Patricia Vargas", district: "Surco", text: "Hicieron un mueble empotrado en drywall que parece de carpintería fina.", initials: "PV", image: avatarF2 },
     ],
   },
   {
@@ -110,10 +120,10 @@ export const services: ServiceData[] = [
       "Asesoría en sistemas de seguridad",
     ],
     testimonials: [
-      { name: "Claudia Morales", district: "Chorrillos", text: "Me quedé fuera de casa a medianoche y llegaron en 20 minutos. Salvadores.", initials: "CM" },
-      { name: "Alberto Ríos", district: "Surco", text: "Cambiaron todas las cerraduras de mi oficina. Trabajo rápido y seguro.", initials: "AR" },
-      { name: "Gloria Paredes", district: "Chorrillos", text: "Instalaron cerraduras de seguridad en toda la casa. Muy confiables.", initials: "GP" },
-      { name: "Enrique Vásquez", district: "Surco", text: "Excelente servicio de duplicado de llaves. Rápido y preciso.", initials: "EV" },
+      { name: "Claudia Morales", district: "Chorrillos", text: "Me quedé fuera de casa a medianoche y llegaron en 20 minutos. Salvadores.", initials: "CM", image: avatarF4 },
+      { name: "Alberto Ríos", district: "Surco", text: "Cambiaron todas las cerraduras de mi oficina. Trabajo rápido y seguro.", initials: "AR", image: avatarM4 },
+      { name: "Gloria Paredes", district: "Chorrillos", text: "Instalaron cerraduras de seguridad en toda la casa. Muy confiables.", initials: "GP", image: avatarF2 },
+      { name: "Enrique Vásquez", district: "Surco", text: "Excelente servicio de duplicado de llaves. Rápido y preciso.", initials: "EV", image: avatarM1 },
     ],
   },
   {
@@ -131,9 +141,9 @@ export const services: ServiceData[] = [
       "Instalación de repisas y estantes",
     ],
     testimonials: [
-      { name: "Liliana Castro", district: "Surco", text: "Hicieron un closet a medida espectacular. Calidad y buen precio.", initials: "LC" },
-      { name: "Marco Peña", district: "Chorrillos", text: "Repararon mi puerta principal que estaba muy dañada. Quedó como nueva.", initials: "MP" },
-      { name: "Isabel Navarro", district: "Surco", text: "Instalaron piso laminado en toda la casa. Trabajo limpio y rápido.", initials: "IN" },
+      { name: "Liliana Castro", district: "Surco", text: "Hicieron un closet a medida espectacular. Calidad y buen precio.", initials: "LC", image: avatarF3 },
+      { name: "Marco Peña", district: "Chorrillos", text: "Repararon mi puerta principal que estaba muy dañada. Quedó como nueva.", initials: "MP", image: avatarM3 },
+      { name: "Isabel Navarro", district: "Surco", text: "Instalaron piso laminado en toda la casa. Trabajo limpio y rápido.", initials: "IN", image: avatarF1 },
     ],
   },
 ];

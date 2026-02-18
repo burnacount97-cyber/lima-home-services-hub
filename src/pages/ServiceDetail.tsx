@@ -2,7 +2,6 @@ import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, MapPin, CheckCircle2 } from "lucide-react";
 import { services } from "@/data/services";
 import TestimonialCard from "@/components/TestimonialCard";
-import WhatsAppButton from "@/components/WhatsAppButton";
 
 import gasfiteriaImg from "@/assets/gasfiteria.jpg";
 import electricidadImg from "@/assets/electricidad.jpg";
@@ -132,7 +131,6 @@ const ServiceDetail = () => {
         </div>
       </div>
 
-      <WhatsAppButton />
     </main>
   );
 };
