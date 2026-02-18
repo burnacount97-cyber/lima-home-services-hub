@@ -29,7 +29,7 @@ const Index = () => {
       </header>
 
       {/* Service Cards */}
-      <section className="mx-auto flex max-w-5xl flex-col gap-6 px-4 pb-24 md:gap-8">
+      <section className="mx-auto grid max-w-5xl grid-cols-2 gap-3 px-4 pb-24 md:grid-cols-3 md:gap-4">
         {serviceCards.map((service, i) => (
           <ServiceCard key={service.slug} {...service} index={i} />
         ))}
