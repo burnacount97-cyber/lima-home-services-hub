@@ -116,4 +116,24 @@ export const services: ServiceData[] = [
       { name: "Enrique Vásquez", district: "Surco", text: "Excelente servicio de duplicado de llaves. Rápido y preciso.", initials: "EV" },
     ],
   },
+  {
+    slug: "carpinteria",
+    name: "Carpintería",
+    tagline: "Muebles a medida y reparaciones en madera",
+    description:
+      "Carpinteros expertos en fabricación de muebles a medida, reparaciones y restauraciones. Trabajamos con todo tipo de maderas para darle vida a tus espacios.",
+    works: [
+      "Fabricación de muebles a medida",
+      "Instalación de closets y reposteros",
+      "Reparación de puertas y ventanas",
+      "Instalación de pisos laminados y de madera",
+      "Restauración de muebles antiguos",
+      "Instalación de repisas y estantes",
+    ],
+    testimonials: [
+      { name: "Liliana Castro", district: "Surco", text: "Hicieron un closet a medida espectacular. Calidad y buen precio.", initials: "LC" },
+      { name: "Marco Peña", district: "Chorrillos", text: "Repararon mi puerta principal que estaba muy dañada. Quedó como nueva.", initials: "MP" },
+      { name: "Isabel Navarro", district: "Surco", text: "Instalaron piso laminado en toda la casa. Trabajo limpio y rápido.", initials: "IN" },
+    ],
+  },
 ];

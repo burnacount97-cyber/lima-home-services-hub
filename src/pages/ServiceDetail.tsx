@@ -9,6 +9,7 @@ import electricidadImg from "@/assets/electricidad.jpg";
 import pinturaImg from "@/assets/pintura.jpg";
 import drywallImg from "@/assets/drywall.jpg";
 import cerrajeriaImg from "@/assets/cerrajeria.jpg";
+import carpinteriaImg from "@/assets/carpinteria.jpg";
 
 const imageMap: Record<string, string> = {
   gasfiteria: gasfiteriaImg,
@@ -16,6 +17,7 @@ const imageMap: Record<string, string> = {
   pintura: pinturaImg,
   drywall: drywallImg,
   cerrajeria: cerrajeriaImg,
+  carpinteria: carpinteriaImg,
 };
 
 const ServiceDetail = () => {
