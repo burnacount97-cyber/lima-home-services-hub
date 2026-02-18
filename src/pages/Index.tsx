@@ -1,13 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import ServiceCard from "@/components/ServiceCard";
+import WhatsAppButton from "@/components/WhatsAppButton";
+
+import gasfiteriaImg from "@/assets/gasfiteria.jpg";
+import electricidadImg from "@/assets/electricidad.jpg";
+import pinturaImg from "@/assets/pintura.jpg";
+import drywallImg from "@/assets/drywall.jpg";
+import cerrajeriaImg from "@/assets/cerrajeria.jpg";
+
+const serviceCards = [
+  { name: "Gasfitería", slug: "gasfiteria", image: gasfiteriaImg },
+  { name: "Electricidad", slug: "electricidad", image: electricidadImg },
+  { name: "Pintura", slug: "pintura", image: pinturaImg },
+  { name: "Drywall", slug: "drywall", image: drywallImg },
+  { name: "Cerrajería", slug: "cerrajeria", image: cerrajeriaImg },
+];
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen bg-background">
+      {/* Hero Header */}
+      <header className="px-4 pt-10 pb-4 text-center md:pt-16 md:pb-8">
+        <h1 className="font-display text-3xl font-bold text-foreground opacity-0 animate-fade-up md:text-5xl">
+          Servicios de Mantenimiento
+        </h1>
+        <p className="mt-3 text-lg text-muted-foreground opacity-0 animate-fade-up md:text-xl" style={{ animationDelay: "100ms" }}>
+          Profesionales de confianza en Chorrillos y Surco
+        </p>
+      </header>
+
+      {/* Service Cards */}
+      <section className="mx-auto flex max-w-5xl flex-col gap-6 px-4 pb-24 md:gap-8">
+        {serviceCards.map((service, i) => (
+          <ServiceCard key={service.slug} {...service} index={i} />
+        ))}
+      </section>
+
+      <WhatsAppButton />
+    </main>
   );
 };
 
